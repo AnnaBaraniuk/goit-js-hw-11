@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук зображень</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Пошук зображень</title>
-  <link rel="stylesheet" href="" />
-  <link rel="stylesheet" href="" />
-</head>
-
-<body>
-  <p><a class="main-link" href="index.html">Go back</a></p>
-
-  <input type="text" id="search-box" />
-  <button type="button" data-start-timer>Search</button>
-
-  <script src="" type="module"></script>
-</body>
-
+  <body>
+    <form class="search-form">
+      <label>
+        <input
+          class="input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+          required
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+    <div class="loader is-hidden"></div>
+    <ul class="gallery"></ul>
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
