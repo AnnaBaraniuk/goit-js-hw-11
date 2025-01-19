@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук зображень</title>
+    
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-10c40100.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Пошук зображень</title>
-  <link rel="stylesheet" href="" />
-  <link rel="stylesheet" href="" />
-  <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-</head>
-
-<body>
-  <p><a class="main-link" href="index.html">Go back</a></p>
-
-  <input type="text" id="search-box" />
-  <button type="button" data-start-timer>Search</button>
-
-  <script src="" type="module"></script>
-</body>
-
+  <body>
+    <form class="search-form">
+      <label>
+        <input
+          class="input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+          required
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+    <div class="loader is-hidden"></div>
+    <ul class="gallery"></ul>
+    
+  </body>
 </html>
